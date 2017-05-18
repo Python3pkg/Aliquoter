@@ -23,7 +23,7 @@ class Quad(namedtuple('Quad', ['nw', 'sw', 'ne', 'se'])):
 def average_points_together(point1, point2):
     _lat = (point1.lat + point2.lat) / 2.0
     _long = (point1.long + point2.long) / 2.0
-    return Point(lat=_lat, int=_long)
+    return Point(lat=_lat, long=_long)
 
 def aliquot(quad, aliquots):
     """Return a quad based on a list of aliquot references.
